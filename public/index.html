@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>四模型对比</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>同 Prompt 多模型对比</h1>
+      <p class="desc">输入同一条 instruction，同时查看 4 个模型的回复。</p>
+
+      <form id="prompt-form">
+        <label for="instruction">Instruction</label>
+        <textarea id="instruction" name="instruction" rows="5" placeholder="例如：请用通俗中文解释什么是RAG，并给一个简单例子。"></textarea>
+        <button id="submit-btn" type="submit">开始对比</button>
+      </form>
+
+      <section id="results" class="grid"></section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
